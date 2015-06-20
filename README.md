@@ -1,2 +1,2 @@
-# inconsistency.github.com
+# inconsistency.github.io
 my online website
