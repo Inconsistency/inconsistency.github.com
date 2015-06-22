@@ -6,7 +6,7 @@ by Jason Costello, @jsncostello
 @import url(github-light.css);
 
 /*******************************************************************************
-MeyerWeb Reset
+MeyerWeb Reset: 一种CSS Reset样式，重置浏览器内置格式；除Mayer其他还有YUI-Yahoo CSS Reset等
 *******************************************************************************/
 
 html, body, div, span, applet, object, iframe,
@@ -45,17 +45,19 @@ table {
 }
 
 /*******************************************************************************
-Theme Styles
+Theme Styles：这一栏里是主题的基础格式
 *******************************************************************************/
 
 body {
-  box-sizing: border-box;
+  /**通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中。**/
+  box-sizing: border-box; 
   color:#373737;
   background: #212121;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+  /**让字体变得光滑清楚**/
+  -webkit-font-smoothing: antialiased; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -106,18 +108,19 @@ a {
   color: #007edf;
   text-shadow: none;
 
-  transition: color 0.5s ease;
+  transition: color 0.5s ease; /**ease：逐渐变慢**/
   transition: text-shadow 0.5s ease;
-  -webkit-transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease; /**webkit内核：-webkit-transition:运动的样式 持续时间 运动形式 延迟时间;**/
   -webkit-transition: text-shadow 0.5s ease;
-  -moz-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease; /**Mozilla内核**/
   -moz-transition: text-shadow 0.5s ease;
-  -o-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease; /**Opera内核**/
   -o-transition: text-shadow 0.5s ease;
-  -ms-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease; /**?**/
   -ms-transition: text-shadow 0.5s ease;
 }
 
+/**a:hover 鼠标悬停；a: focus 链接得到焦点时的状态**/
 a:hover, a:focus {text-decoration: underline;}
 
 footer a {
